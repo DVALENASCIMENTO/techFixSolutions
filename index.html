@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFix Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <img src="logo.png" alt="TechFix Solutions Logo" class="logo">
+        <h1>TechFix Solutions</h1>
+        <h2>Manutenção e Configuração de Microcomputadores</h2>
+    </header>
+    
+    <main>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos especialistas em manutenção de computadores, oferecendo soluções rápidas e eficazes.</p>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service" onclick="showPopup('diagnostico')">
+                    <img src="diagnostico.jpg" alt="Diagnóstico Preciso">
+                    <p>Diagnóstico Preciso</p>
+                </div>
+                <div class="service" onclick="showPopup('reparo')">
+                    <img src="reparo.jpg" alt="Reparo Rápido">
+                    <p>Reparo Rápido</p>
+                </div>
+                <div class="service" onclick="showPopup('upgrade')">
+                    <img src="upgrade.jpg" alt="Upgrade de Hardware">
+                    <p>Upgrade de Hardware</p>
+                </div>
+                <div class="service" onclick="showPopup('virus')">
+                    <img src="virus.jpg" alt="Remoção de Vírus e Malware">
+                    <p>Remoção de Vírus e Malware</p>
+                </div>
+                <div class="service" onclick="showPopup('otimizacao')">
+                    <img src="otimizacao.jpg" alt="Otimização de Sistema">
+                    <p>Otimização de Sistema</p>
+                </div>
+                <div class="service" onclick="showPopup('atendimento')">
+                    <img src="atendimento.jpg" alt="Serviços de Atendimento On-Site">
+                    <p>Serviços de Atendimento On-Site</p>
+                </div>
+                <div class="service" onclick="showPopup('retirada')">
+                    <img src="retirada.jpg" alt="Retirada e Entrega">
+                    <p>Retirada e Entrega</p>
+                </div>
+                <div class="service" onclick="showPopup('backup')">
+                    <img src="backup.jpg" alt="Backup e Remoção de Dados">
+                    <p>Backup e Remoção de Dados</p>
+                </div>
+                <div class="service" onclick="showPopup('suporte')">
+                    <img src="suporte.jpg" alt="Suporte Remoto">
+                    <p>Suporte Remoto</p>
+                </div>
+                <div class="service" onclick="showPopup('consultoria')">
+                    <img src="consultoria.jpg" alt="Consultoria em Atualizações Tecnológicas">
+                    <p>Consultoria em Atualizações Tecnológicas</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:contato@techfix.com">contato@techfix.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/SEUNUMERO" target="_blank">Clique aqui para conversar</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Diego Nascimento - Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/diegonascimento" target="_blank">LinkedIn</a>
+            <a href="https://github.com/diegonascimento" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+</body>
+</html>
